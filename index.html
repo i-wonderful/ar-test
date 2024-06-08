@@ -9,16 +9,23 @@
 <body>
 <a-scene mindar-image="imageTargetSrc:./targets/penguin.mind; uiError:#error-message; uiLoading:#loading-indicator; uiScanning:#scanning-screen">
     <a-assets>
-        <a-asset-item id="roomModelAsset" src="./models/room.glb"></a-asset-item>
+        <!--                     >-->
+        <a-asset-item id="roomModelAsset"
+                      src="./models/Fantasy.glb">
+        >
+        </a-asset-item>
     </a-assets>
 
-    <a-gltf-model id="roomModel" src="#roomModelAsset"
-                  position="0 0 0"
-                  scale="0.00001 0.00001 0.00001"
-                  mindar-image-target="targetIndex: 0">
-    </a-gltf-model>
+    <a-entity mindar-image-target="targetIndex: 0">
+        <a-gltf-model id="roomModel" src="#roomModelAsset"
+                      position="0 0 0"
+                      scale="0.3 0.3 0.3"
+                       >
+        </a-gltf-model>
+    </a-entity>
 
-    <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+    <a-camera position="0 4 7" look-controls="enabled: true"></a-camera>
 </a-scene>
 </body>
 </html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <title>Test Model Scale</title>
+</head>
+<body>
+<a-scene>
+  <a-assets>
+    <a-asset-item id="roomModelAsset" src="./models/Fantasy.glb"></a-asset-item>
+  </a-assets>
+
+  <a-gltf-model src="#roomModelAsset" position="0 4 -1" scale="0.7 0.7 0.7"></a-gltf-model>
+
+  <a-camera position="0 4 7"></a-camera>
+</a-scene>
+</body>
+</html>
