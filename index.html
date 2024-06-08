@@ -9,10 +9,14 @@
 <body>
 <a-scene mindar-image="imageTargetSrc:./targets/penguin.mind; uiError:#error-message; uiLoading:#loading-indicator; uiScanning:#scanning-screen">
     <a-assets>
-        <a-asset-item id="airportBenchModelAsset" src="./models/room.glb"></a-asset-item>
+        <a-asset-item id="roomModelAsset" src="./models/room.glb"></a-asset-item>
     </a-assets>
 
-    <a-gltf-model id="airportBenchModel" src="#airportBenchModelAsset" position="0 0 0" scale="0.01 0.01 0.01" mindar-image-target="targetIndex: 0"></a-gltf-model>
+    <a-gltf-model id="roomModel" src="#roomModelAsset"
+                  position="0 0 0"
+                  scale="0.00001 0.00001 0.00001"
+                  mindar-image-target="targetIndex: 0">
+    </a-gltf-model>
 
     <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 </a-scene>
