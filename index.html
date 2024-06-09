@@ -7,17 +7,18 @@
     <title>MindAR Test</title>
 </head>
 <body>
-<a-scene mindar-image="imageTargetSrc:./targets/100rub.mind; uiError:#error-message; uiLoading:#loading-indicator; uiScanning:#scanning-screen">
+<a-scene mindar-image="imageTargetSrc:./targets/100rub.mind; uiError:#error-message; uiLoading:#loading-indicator; uiScanning:#scanning-screen"
+         color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights">
     <a-assets>
         <a-asset-item id="roomModelAsset"
-                      src="./models/Fantasy.glb">
+                      src="./models/Airport_Bench.glb">
         </a-asset-item>
     </a-assets>
 
     <a-entity mindar-image-target="targetIndex: 0">
         <a-gltf-model id="roomModel" src="#roomModelAsset"
-                      position="0 0 0.2"
-                      scale="0.2 0.2 0.2"
+                      position="0 0 0"
+                      scale="0.1 0.1 0.1"
                        >
         </a-gltf-model>
     </a-entity>
